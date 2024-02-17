@@ -15,6 +15,6 @@ body {
 }
 
 .sidebar-desktop {
-  @apply w-64 px-3 py-5 text-white md:relative;
+  @apply w-96 px-3 py-5 text-white md:relative;
 }
 

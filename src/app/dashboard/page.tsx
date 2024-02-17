@@ -1,10 +1,11 @@
 import React from 'react'
+import Table from './components/Table/Table'
 
 const index = () => {
   return (
     <>
       <div>
-        PAGE
+        <Table/>
       </div>
     </>
   )

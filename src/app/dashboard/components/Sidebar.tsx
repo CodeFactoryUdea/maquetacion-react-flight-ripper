@@ -1,29 +1,26 @@
+import Link from 'next/link'
 import React from 'react'
+import Button from './Button/Button'
 
 const Sidebar = () => {
   return (
     <aside className={`sidebar-desktop
-        flex flex-col bg-[#FFAFAF]
+        flex flex-col bg-[#FFAFAF] justify-between items-center
         `}>
-        <div className="flex flex-col items-center justify-between gap-9">
-            <h1>Circulo</h1>
-            <h1>Name </h1>
+      <div className="flex flex-col items-center justify-between gap-8">
+        <div className="w-[130px] h-[130px] bg-white rounded-full">
         </div>
-        <div className="flex flex-col justify-between h-full">
-        <nav>
-          <ul className="flex flex-col gap-3">
-            {/* <SidebarLink href="/inventory-management" title={"Inventario"} /> */}
-            {/* <SidebarLink href="/materials-management" title={"Materiales"} /> */}
-            {/* <PrivateRoute role={"ADMIN"}> */}
-              {/* <SidebarLink href="/users-management" title={"Usuarios"} /> */}
-            {/* </PrivateRoute> */}
-          </ul>
-        </nav>
-        <button type="button" className="border-1">
-          Log out
-        </button>
+
+        <h1 className="font-bold text-black text-[20px]">Blanca Nieves</h1>
+
+        <Button buttonText='Mis reservas'/>
+        <Button buttonText='Reservas mundiales'/>
       </div>
-        
+      <div className="flex justify-center items-center">
+        <Button buttonText='Log Out' url='/'/>
+      </div>
+
+
     </aside>
   )
 }
