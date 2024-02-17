@@ -17,7 +17,7 @@ const page = () => {
         <h1>Let's assume this is login page</h1>
       </div>
 
-      <Link href="/dashboard">go to Dashboard</Link>
+      <Link href="/dashboard/my-reservations">go to Dashboard</Link>
       <BoxComponent />
       <BoxComponent />
       <BoxComponent />

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-full h-full">
-        <main className="w-full h-full bg-[#D9D9D9]">
+        <main className="w-full h-full bg-[#cc4d4d]">
           {children}
         </main>
       </body>

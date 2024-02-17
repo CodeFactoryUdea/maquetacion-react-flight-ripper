@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 import React from 'react'
 
 interface ButtonProps {
@@ -7,12 +9,15 @@ interface ButtonProps {
 }
 
 const Button = ({buttonText, url = '#'}:ButtonProps) => {
+    const pathname = usePathname()
+    const isActive = pathname === url;
+
+
   return (
     <>
-        <Link href={url} 
-          className="bg-[#FB7979] w-60 h-14 
-          hover:bg-[#FC8F8F] active:bg-[#E94C4C]
-          flex items-center justify-center rounded-[30px]">{buttonText}</Link>
+        <Link href={url}>
+            <li className={isActive ? "active" : ""}>{buttonText}</li>
+        </Link>
     </>
   )
 }

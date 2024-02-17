@@ -10,7 +10,7 @@ export default function DashboardLayout({
       <div className="flex h-screen w-screen">
         {/* Include shared UI here e.g. a header or sidebar */}
         <Sidebar/>
-        <div className="flex h-full w-full flex-col">
+        <div className="flex h-full w-full flex-col bg-[#D9D9D9]">
           <Header />
           {children}
 

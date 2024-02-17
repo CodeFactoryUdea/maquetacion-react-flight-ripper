@@ -13,8 +13,8 @@ const Sidebar = () => {
 
         <h1 className="font-bold text-black text-[20px]">Blanca Nieves</h1>
 
-        <Button buttonText='Mis reservas'/>
-        <Button buttonText='Reservas mundiales'/>
+        <Button buttonText='Mis reservas' url="/dashboard/my-reservations"/>
+        <Button buttonText='Reservas mundiales' url="/dashboard/all-reservations" />
       </div>
       <div className="flex justify-center items-center">
         <Button buttonText='Log Out' url='/'/>
